@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+     <link rel="stylesheet" href="./index.css">
+     <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+     <script src="index.js" ></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="go col-md-12 "><img src="" width="80px;">
+    <p>crud operation</p>
+    </div>
+    <table>
+                <tr>
+                 <td>
+                   <strong>  <center>user Details</center></strong>
+                     <hr>
+                     <form onsubmit="event.preventDefault();onformsubmit()" autocomplete="off">
+                        <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                       <lable id="fnameerror" style="color:red"></lable> <input type="text" class="form-control" name="firstname"id="firstname" placeholder="firstname" maxlength="20" size="10" >
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <lable id="cnameerror" style="color:red"></lable><input type="text" class="form-control em" id="contact" placeholder="contact no." maxlength="13" >
+                                    </div>
+                            </div>
+                                  <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <lable id="lnameerror" style="color:red"></lable> <input type="text" class="form-control" id="lastname" placeholder="lastname" >
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <lable id="enameerror" style="color:red"></lable> <input type="email" class="form-control" id="email" placeholder="Email" >
+                                        </div>
+                                        <div >
+                                            <lable id="tnameerror"style="color:red"></lable> <textarea placeholder="address" cols="50" rows="5" class="form-control "class="tt" id="tarea"></textarea>
+                                        </div>
+                                    </div>
+                                    <div >
+                                    <center style="margin-left: 800px;"><input type="submit"class="btn btn-success" style="float: left;" value="Add"></center>
+                                   </div>
+                            </form>
+                                      </td>
+                                   <br>
+            <table class="list" id="user"><hr width="60%">
+                <thead>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>contact no.</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                 </thead>
+                    <tbody>
+                           
+                    </tbody>
+                </table>
+               </div>    
+            </div>
+        </tr>
+    </table>
+</body>
+</html>
